@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rachitkakkar.github.io/RachitBan/static/css/main.591aa0e1.css",
-    "main.js": "/rachitkakkar.github.io/RachitBan/static/js/main.a271aeb8.js",
-    "static/media/beach-2836300.jpg": "/rachitkakkar.github.io/RachitBan/static/media/beach-2836300.6e55220eeace6e7caee7.jpg",
-    "index.html": "/rachitkakkar.github.io/RachitBan/index.html",
-    "main.591aa0e1.css.map": "/rachitkakkar.github.io/RachitBan/static/css/main.591aa0e1.css.map",
-    "main.a271aeb8.js.map": "/rachitkakkar.github.io/RachitBan/static/js/main.a271aeb8.js.map"
+    "main.css": "/RachitBan/static/css/main.a80bcaaa.css",
+    "main.js": "/RachitBan/static/js/main.a271aeb8.js",
+    "static/media/beach-2836300.jpg": "/RachitBan/static/media/beach-2836300.6e55220eeace6e7caee7.jpg",
+    "index.html": "/RachitBan/index.html",
+    "main.a80bcaaa.css.map": "/RachitBan/static/css/main.a80bcaaa.css.map",
+    "main.a271aeb8.js.map": "/RachitBan/static/js/main.a271aeb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.591aa0e1.css",
+    "static/css/main.a80bcaaa.css",
     "static/js/main.a271aeb8.js"
   ]
 }
