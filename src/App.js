@@ -80,12 +80,19 @@ function App() {
     let selectedList = board.filter((list) => list.id === list_id)[0];
     let newList = JSON.parse(JSON.stringify(selectedList)); 
     setCurrentID(currentID + 1);
-    newList.cards.push({ id: currentID, description: name }) 
+    newList.cards.push({ id: currentID, description: name })
+    let boardClone = JSON.parse(JSON.stringify(board));
+    for (var i = 0; i < boardClone.length; i++) {
+      if (boardClone[i].id === list_id) {
+        boardClone[i] = newList;
+      }
+    }
+    setBoard(boardClone); 
   }
 
   return (
     <div className='container'>
-      <Board board={board} onDeleteList={deleteList} onDeleteCard={deleteCard} onAddList={addList} />
+      <Board board={board} onDeleteList={deleteList} onDeleteCard={deleteCard} onAddList={addList} onAddCard={addCard} />
     </div>
   );
 }

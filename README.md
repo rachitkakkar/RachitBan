@@ -1,5 +1,8 @@
-## RachitBan
+# RachitBan
+![Demonstration](demonstration.GIF)
+(Higher quality video in demonstration.mp4)
+
 A Kanban board built with ReactJS. Designed as a learning project to learn the framework and get my foot in the door of web development as it is not something I have focused on.
 
-WORK IN PROJECT
-When it is complete, I will add images and write a blog post
+Visit at: https://rachitkakkar.github.io/RachitBan
+Blog post in the works!
