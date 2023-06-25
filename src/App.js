@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Board from './components/Board';
 
 function App() {
-  const [board, setBoard] = useState([
+
+  const [board, setBoard] = useState(localStorage.getItem('board') !== null ? JSON.parse(localStorage.getItem('board')) : 
+  [
     {
       title: 'To-Do',
       id: 0,
@@ -49,8 +51,11 @@ function App() {
       ]
     }
   ]);
-
   const [currentID, setCurrentID] = useState(3);
+
+  useEffect(() => {
+    localStorage.setItem('board', JSON.stringify(board));
+  }, [board]);
 
   const deleteList = (id) => {
     setBoard(board.filter((list) => list.id !== id));
@@ -70,10 +75,8 @@ function App() {
   }
 
   const addList = (name) => {
-    let boardClone = JSON.parse(JSON.stringify(board));
     setCurrentID(currentID + 1);
-    boardClone.push({ title: name, id: currentID, cards: [] });
-    setBoard(boardClone);
+    setBoard([ ...board,  { title: name, id: currentID, cards: [] } ]);
   }
 
   const addCard = (list_id, name) => {
