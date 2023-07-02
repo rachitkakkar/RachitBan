@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
+import {DndContext} from '@dnd-kit/core';
 import Board from './components/Board';
 
 function App() {
-
   const [board, setBoard] = useState(localStorage.getItem('board') !== null ? JSON.parse(localStorage.getItem('board')) : 
   [
     {
@@ -51,11 +51,12 @@ function App() {
       ]
     }
   ]);
-  const [currentID, setCurrentID] = useState(3);
+  const [currentID, setCurrentID] = useState(localStorage.getItem('currentID') !== null ? parseInt(localStorage.getItem('currentID')) : 3);
 
   useEffect(() => {
     localStorage.setItem('board', JSON.stringify(board));
-  }, [board]);
+    localStorage.setItem('currentID', currentID);
+  }, [board, currentID]);
 
   const deleteList = (id) => {
     setBoard(board.filter((list) => list.id !== id));
@@ -94,9 +95,9 @@ function App() {
   }
 
   return (
-    <div className='container'>
+    <DndContext>
       <Board board={board} onDeleteList={deleteList} onDeleteCard={deleteCard} onAddList={addList} onAddCard={addCard} />
-    </div>
+    </DndContext>
   );
 }
 

@@ -4,9 +4,8 @@ const Cards = ({ cards, list_id, onDeleteCard }) => {
   return (
     <>
       {cards.map((card) => (
-        <div className='card-container'>
-          <FaTimes onClick={ () => onDeleteCard(list_id, card.id) } style={{ color: '#ff1239', cursor: 'pointer', position: 'relative', right: '-93%', top: '40px' }} />
-          <h3 className='card'>{card.description}</h3>
+        <div className='card-container' key={card.id}>
+          <h3 className='card'>{card.description}<FaTimes onClick={ () => onDeleteCard(list_id, card.id) } className='close-icon-card' /></h3>
         </div>
       ))}
     </>
