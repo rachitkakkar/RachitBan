@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/RachitBan/static/css/main.a80bcaaa.css",
-    "main.js": "/RachitBan/static/js/main.2fe6d389.js",
-    "static/media/beach-2836300.jpg": "/RachitBan/static/media/beach-2836300.6e55220eeace6e7caee7.jpg",
+    "main.css": "/RachitBan/static/css/main.d00d34fe.css",
+    "main.js": "/RachitBan/static/js/main.448ab27d.js",
     "index.html": "/RachitBan/index.html",
-    "main.a80bcaaa.css.map": "/RachitBan/static/css/main.a80bcaaa.css.map",
-    "main.2fe6d389.js.map": "/RachitBan/static/js/main.2fe6d389.js.map"
+    "main.d00d34fe.css.map": "/RachitBan/static/css/main.d00d34fe.css.map",
+    "main.448ab27d.js.map": "/RachitBan/static/js/main.448ab27d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a80bcaaa.css",
-    "static/js/main.2fe6d389.js"
+    "static/css/main.d00d34fe.css",
+    "static/js/main.448ab27d.js"
   ]
 }
