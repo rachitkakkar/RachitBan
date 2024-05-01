@@ -1,5 +1,5 @@
 # Important
-As of 4/26/2024, I begin a major rewrite with React, Typescript, Tailwind, shadCN UI, and dndkit. The old README is found below.
+As of 4/26/2024, I begin a major rewrite with React, Typescript, Tailwind, shadcn/ui, and dndkit. The old README is found below.
 
 <div align="center">
     <h1>RachitBan</h1>

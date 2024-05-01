@@ -59,8 +59,10 @@ function KanbanBoard({ title } : BoardProps ) {
 
   return (
     <div>
-      <h2 className="text-4xl font-semibold mb-2">{title}</h2>
-      <CustomizationMenu />
+      <div className="flex">
+        <h2 className="text-4xl font-semibold mb-2">{title}</h2>
+        <CustomizationMenu />
+      </div>
       <div className="gap-2 sm:gap-3 md:gap-4 lg:gap-5 sm:grid sm:grid-flow-col sm:auto-cols-auto">
         <DndContext
           sensors={sensors}
