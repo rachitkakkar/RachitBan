@@ -20,11 +20,9 @@ export interface List {
   cards: string[];
 }
 
-export interface BoardProps {
-  title: string;
-}
+function KanbanBoard() {
+  const [title, setTitle] = useState("Tasks");
 
-function KanbanBoard({ title } : BoardProps ) {
   const [lists, setLists] = useState<List[]>([
     { title: "Languages", cards: ["Javascript", "Python", "Tempest"] },
     { title: "Real Languages", cards: ["Spanish", "German", "French", "Hindi"] },

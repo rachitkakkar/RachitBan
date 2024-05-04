@@ -24,7 +24,7 @@ function CardDialog({ dialog, selectedList, addCard, closeDialog } : CardDialogP
   }
 
   function createCard() {
-    if (name !== "") {
+    if (name.trim() !== "") {
       closeDialog();
       if (name.length > 25) {
         addCard(selectedList, name.substring(0, 25) + '...'); // Truncate

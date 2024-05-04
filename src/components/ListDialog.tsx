@@ -23,7 +23,7 @@ function ListDialog({ dialog, addList, closeDialog } : ListDialogProps) {
   }
 
   function createList() {
-    if (name !== "") {
+    if (name.trim() !== "") {
       closeDialog();
       if (name.length > 25) {
         addList(name.substring(0, 25) + '...'); // Truncate
